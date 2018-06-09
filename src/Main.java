@@ -8,20 +8,32 @@ class Main {
                     case 3: return "III";
                     case 4: return "IV";
                     case 5: return "V";
-                    case 6: return  "VI";
+                    case 6: return "VI";
                     case 7: return "VII";
                     case 8: return "VIII";
-                    case 9: return  "IX";
+                    case 9: return "IX";
                     case 10: return "X";
                     default: return "Numero invalido";
 
                 }
         }
     public static void main(String[] args) {
+        int numero = 10;
+//        for (int i = 10; i >= 1; i--){
+//        numero = i;
+//
+//        System.out.println(romanos(numero));
+//        JOptionPane.showMessageDialog(null,romanos(numero), "Resultado" , JOptionPane.WARNING_MESSAGE);
+//        }
 
-        int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número: "));
+        while( numero >= 1){
+            JOptionPane.showMessageDialog(null,romanos(numero), "Resultado" , JOptionPane.WARNING_MESSAGE);
+        numero--;
 
-        JOptionPane.showMessageDialog(null,romanos(numero), "Resultado" , JOptionPane.WARNING_MESSAGE);
+        }
+        /*int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número: "));
+
+        JOptionPane.showMessageDialog(null,romanos(numero), "Resultado" , JOptionPane.WARNING_MESSAGE);*/
 
     }
 }
