@@ -19,13 +19,6 @@ class Main {
         }
     public static void main(String[] args) {
 
-        //Scanner entrada = new Scanner(System.in);
-        //System.out.println("Digite um número entre 0 e 10: ");
-
-        //int numero;
-        //= entrada.nextInt();
-        //System.out.println(romanos(numero));
-
         int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número: "));
 
         JOptionPane.showMessageDialog(null,romanos(numero), "Resultado" , JOptionPane.WARNING_MESSAGE);
